@@ -2,6 +2,7 @@
 This project aims to learning and developing a deeper understanding, paving the way for more complex projects in Data Science, AI/ML, and Data Engineering.
 
 # Programming language
+- jupyter notebook
 - python
 
 # Python library
