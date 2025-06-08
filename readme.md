@@ -1,5 +1,5 @@
 # Purpose of Creating This Project
-    This project aims to learning and developing a deeper understanding, paving the way for more complex projects in Data Science, AI/ML, and Data Engineering.
+This project aims to learning and developing a deeper understanding, paving the way for more complex projects in Data Science, AI/ML, and Data Engineering.
 
 # Programming language
 - python
