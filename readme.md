@@ -1,35 +1,33 @@
-# E-commerce Data Analysis by Year and Month
+# Purpose of Creating This Project
+    This project aims to learning and developing a deeper understanding, paving the way for more complex projects in Data Science, AI/ML, and Data Engineering.
 
-This project analyzes an e-commerce dataset stored in a CSV file.
+# Programming language
+- python
+
+# Python library
+- pandas
+- matplotlib
+- openpyxl
+- scipy
+- fastparquet
+- seaborn
+
+# Loss Leader Strategy Effectiveness Analysis
+A loss leader strategy involves selling a product at a loss to attract new customers. The expectation is that these customers will then purchase additional, profitable items, offsetting the initial loss and leading to overall profitability.
 
 data source: https://www.kaggle.com/datasets/vivek468/superstore-dataset-final?resource=download
 
-## Workflow
-- Data Classification by Year: The dataset is first separated by individual years.
-- Monthly Segmentation: Each year’s data is further divided into monthly segments for detailed analysis.
-- Annual Income Comparison Table: An aggregated table is created to compare total income across different years, allowing easy visualization of growth or decline over time.
+# Hypothesis
+The central hypothesis of this analysis is: When a heavily discounted, loss-making product is sold, the strategic expectation is that the profit from this customer's subsequent purchases will leading to a profitable long-term relationship.
 
-## Tools
-- python
-- pandas
-- openpyxl
-- matplotlib
+If the hypothesis is correct, Correlation between the number of orders a customer places after their initial loss-making purchase and their cumulative net profit should be positive
 
-## File Descriptions
+# Analytical Approach
+The analysis was conducted using a Python script in a Jupyter Notebook (LossLeaderAnalysis.ipynb).
+**Data Preparation:** The dataset (fixtypes.parquet) was sorted by Order Date to establish a timeline of purchases for each customer. Identified customers whose first purchase was a loss-making product and accumulated the profits from their subsequent orders.
 
-### cleaningData.ipynb
-- Checks for missing or null values
-- Converts columns to appropriate data types
-- Saves the cleaned DataFrame to `fixtypes.parquet`
-
-### loss_state.ipynb
-- Identifies states with an overall loss
-- Identifies cities within those states contributing to the loss
-
-### analysis.ipynb
-- Classifies data by year and month
-- Exports classified data to Excel files in the `/excel` directory as `.xlsx`
-
-
-
-
+# Correlation Analysis:
+To test the hypothesis, Spearman's rank correlation (ρ) was used. This non-parametric test measures the strength and direction of the relationship between two variables:
+**X-axis:** Total Number of Orders of each customer.
+**Y-axis:** Total Net Profit of each customer.
+Significance Filtering: The analysis focused on customers where the correlation was statistically significant, defined as having a P-value < 0.05.

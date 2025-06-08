@@ -1,4 +1,5 @@
 pandas
-matplotlib
-openpyxl
 scipy
+numpy
+matplotlib
+seaborn
