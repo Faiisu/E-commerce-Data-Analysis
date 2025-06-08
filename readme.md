@@ -24,7 +24,9 @@ If the hypothesis is correct, Correlation between the number of orders a custome
 
 # Analytical Approach
 The analysis was conducted using a Python script in a Jupyter Notebook (LossLeaderAnalysis.ipynb).
-**Data Preparation:** The dataset (fixtypes.parquet) was sorted by Order Date to establish a timeline of purchases for each customer. Identified customers whose first purchase was a loss-making product and accumulated the profits from their subsequent orders.
+
+**Data Preparation:** The dataset (fixtypes.parquet) was sorted by Order Date to establish a timeline of purchases for each customer.
+- Identified customers whose first purchase was a loss-making product and accumulated the profits from their subsequent orders.
 
 # Correlation Analysis:
 To test the hypothesis, Spearman's rank correlation (ρ) was used. This non-parametric test measures the strength and direction of the relationship between two variables:
