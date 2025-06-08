@@ -30,6 +30,9 @@ The analysis was conducted using a Python script in a Jupyter Notebook (LossLead
 
 # Correlation Analysis:
 To test the hypothesis, Spearman's rank correlation (ρ) was used. This non-parametric test measures the strength and direction of the relationship between two variables:
+
 **X-axis:** Total Number of Orders of each customer.
+
 **Y-axis:** Total Net Profit of each customer.
-Significance Filtering: The analysis focused on customers where the correlation was statistically significant, defined as having a P-value < 0.05.
+
+**Significance Filtering:** The analysis focused on customers where the correlation was statistically significant, defined as having a P-value < 0.05.
